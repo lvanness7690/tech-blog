@@ -1,0 +1,16 @@
+{{!< layouts/main}}
+{{#content "body"}}
+    <section>
+        <h1>Welcome to Tech Blog</h1>
+        <!-- Display existing blog posts here -->
+        {{#if posts.length}}
+            <ul>
+            {{#each posts}}
+                <li>{{this.title}} - {{this.createdAt}}</li>
+            {{/each}}
+            </ul>
+        {{else}}
+            <p>No posts available.</p>
+        {{/if}}
+    </section>
+{{/content}}
