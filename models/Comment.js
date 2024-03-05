@@ -1,18 +1,14 @@
 const { Model, DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
-  class Post extends Model {
+  class Comment extends Model {
     static associate(models) {
       this.belongsTo(models.User, { foreignKey: 'userId', as: 'user' });
-      this.hasMany(models.Comment, { foreignKey: 'postId', as: 'comments' });
+      this.belongsTo(models.Post, { foreignKey: 'postId', as: 'post' });
     }
   }
 
-  Post.init({
-    title: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
+  Comment.init({
     content: {
       type: DataTypes.TEXT,
       allowNull: false,
@@ -21,10 +17,14 @@ module.exports = (sequelize) => {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+    postId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
   }, {
     sequelize,
-    modelName: 'Post',
+    modelName: 'Comment',
   });
 
-  return Post;
+  return Comment;
 };

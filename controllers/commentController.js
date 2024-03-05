@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Comment } = require('../models'); // Replace with your actual model import
+const { Comment } = require('../models'); // Corrected model import
 
 // Route to create a comment on a post
 router.post('/:postId', async (req, res) => {

@@ -1,17 +1,35 @@
-// models/User.js
-const { DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require('sequelize');
 
-const User = sequelize.define('User', {
-  username: {
-    type: DataTypes.STRING,
-    allowNull: false,
-    unique: true
-  },
-  password: {
-    type: DataTypes.STRING,
-    allowNull: false
+module.exports = (sequelize) => {
+  class User extends Model {
+    static associate(models) {
+      this.hasMany(models.Post, { foreignKey: 'userId', as: 'posts' });
+      this.hasMany(models.Comment, { foreignKey: 'userId', as: 'comments' });
+    }
   }
-});
 
-module.exports = User;
+  User.init({
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+  }, {
+    sequelize,
+    modelName: 'User',
+  });
+
+  return User;
+};

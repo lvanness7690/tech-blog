@@ -1,7 +1,6 @@
-// controllers/postController.js
 const express = require('express');
 const router = express.Router();
-const Post = require('../models/Post');
+const { Post } = require('../models'); // Corrected the import
 
 // Get all posts
 router.get('/', async (req, res) => {

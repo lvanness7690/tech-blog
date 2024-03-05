@@ -1,7 +1,6 @@
-// controllers/userController.js
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
+const { User } = require('../models'); // Corrected the import
 const bcrypt = require('bcrypt');
 
 // User Registration
