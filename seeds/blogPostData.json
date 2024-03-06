@@ -1,20 +1,32 @@
 [
-    {
-      "title": "The future of TikTok bans",
-      "description": "Montana's new TikTok ban will see app stores fined $10,000 per day if they make TikTok available to users in Montana after January 1...",
-      "date_created": "October 15, 2021",
-      "user_id": 1
-    },
-    {
-      "title": "An OpenAI alum is building a robot butler for your home",
-      "description": "Prosper Robotics, a startup founded by a former OpenAI employee, is building a household robot that will be able to load and empty the dishwasher, do laundry, clean surfaces and floors, and prepare simple meals...",
-      "date_created": "January 2, 2022",
-      "user_id": 2
-    },
-    {
-      "title": "Vue Vine (GitHub Repo)",
-      "description": "Vue Vine is another style for writing Vue components. It supports writing multiple Vue components in a single file. Vue Vine was designed to provide flexibility when managing Vue components...",
-      "date_created": "May 27, 2023",
-      "user_id": 3
-    }
-  ]
+  {
+    "title": "The Impact of TikTok Bans Across the US",
+    "description": "Following Montana's lead, several other states have implemented or are considering TikTok bans, citing national security concerns. Legal challenges and debates over digital freedom and privacy are intensifying, with major implications for social media regulation...",
+    "date_created": "March 15, 2024",
+    "user_id": 1
+  },
+  {
+    "title": "Prosper Robotics Unveils First Home Assistant Robot",
+    "description": "Prosper Robotics, after years of development, has introduced its first commercial household robot. Capable of more complex tasks such as sorting recycling, assisting with home gardening, and interactive tutoring for children, this marks a significant advancement in home robotics...",
+    "date_created": "February 20, 2024",
+    "user_id": 2
+  },
+  {
+    "title": "Vue Vine Evolution: Integrating with Vue 4",
+    "description": "Vue Vine, the innovative approach to Vue component management, has released a major update to fully support Vue 4's composition API. This update provides developers with enhanced capabilities for building scalable and maintainable web applications...",
+    "date_created": "December 10, 2023",
+    "user_id": 3
+  },
+  {
+    "title": "Breakthrough in AI Ethics: New Frameworks for Fairness",
+    "description": "In response to growing concerns over AI bias and ethical decision-making, a coalition of leading AI research institutions has developed a comprehensive set of guidelines designed to promote fairness and transparency in AI deployments...",
+    "date_created": "November 5, 2023",
+    "user_id": 4
+  },
+  {
+    "title": "Global Crypto Regulations Take Shape",
+    "description": "After years of uncertainty, major economic powers have begun to establish a coordinated framework for cryptocurrency regulation. The new policies aim to enhance security, prevent fraud, and stabilize digital currency markets without stifiling innovation...",
+    "date_created": "January 18, 2024",
+    "user_id": 5
+  }
+]

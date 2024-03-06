@@ -1,38 +1,62 @@
 [
-    {
-      "comment_body": "What is this guy talking about!",
-      "date_created": "January 15, 2022",
-      "user_id": 2,
-      "blogPost_id": 1
-    },
-    {
-      "comment_body": "I can see what he meant",
-      "date_created": "June 2, 2022",
-      "user_id": 3,
-      "blogPost_id": 1
-    },
-    {
-      "comment_body": "Peace and love mannnnn, even for robots!",
-      "date_created": "March 18, 2022",
-      "user_id": 3,
-      "blogPost_id": 2
-    },
-    {
-      "comment_body": "What is your opinion?",
-      "date_created": "November 1, 2022",
-      "user_id": 1,
-      "blogPost_id": 2
-    },
-    {
-      "comment_body": "lol",
-      "date_created": "May 28, 2023",
-      "user_id": 2,
-      "blogPost_id": 3
-    },
-    {
-      "comment_body": "Never believe the media",
-      "date_created": "May 30, 2023",
-      "user_id": 1,
-      "blogPost_id": 3
-    }
-  ]
+  {
+    "comment_body": "What is this guy talking about!",
+    "date_created": "January 15, 2024",
+    "user_id": 2,
+    "blogPost_id": 1
+  },
+  {
+    "comment_body": "I can see what he meant",
+    "date_created": "June 2, 2024",
+    "user_id": 3,
+    "blogPost_id": 1
+  },
+  {
+    "comment_body": "Peace and love mannnnn, even for robots!",
+    "date_created": "March 18, 2024",
+    "user_id": 3,
+    "blogPost_id": 2
+  },
+  {
+    "comment_body": "What is your opinion?",
+    "date_created": "November 1, 2024",
+    "user_id": 1,
+    "blogPost_id": 2
+  },
+  {
+    "comment_body": "lol, this is unexpectedly insightful!",
+    "date_created": "May 28, 2024",
+    "user_id": 2,
+    "blogPost_id": 3
+  },
+  {
+    "comment_body": "Never believe the media, except when they're right.",
+    "date_created": "May 30, 2024",
+    "user_id": 1,
+    "blogPost_id": 3
+  },
+  {
+    "comment_body": "The depth of this analysis is astonishing.",
+    "date_created": "July 12, 2024",
+    "user_id": 4,
+    "blogPost_id": 4
+  },
+  {
+    "comment_body": "Finally, someone says what we've all been thinking!",
+    "date_created": "August 9, 2024",
+    "user_id": 5,
+    "blogPost_id": 5
+  },
+  {
+    "comment_body": "Could not disagree more, but interesting perspective.",
+    "date_created": "September 22, 2024",
+    "user_id": 6,
+    "blogPost_id": 5
+  },
+  {
+    "comment_body": "This conversation is the epitome of modern discourse.",
+    "date_created": "October 3, 2024",
+    "user_id": 2,
+    "blogPost_id": 4
+  }
+]
