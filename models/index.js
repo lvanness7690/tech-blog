@@ -1,40 +1,36 @@
-const fs = require('fs');
-const path = require('path');
-const Sequelize = require('sequelize');
-const basename = path.basename(__filename);
-const env = process.env.NODE_ENV || 'development';
+// Imports
+const User = require("./user");
+const BlogPost = require("./blogPost");
+const Comment = require("./comment");
 
-const sequelize = new Sequelize({
-  dialect: 'mysql',
-  host: process.env.DB_HOST,
-  username: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME
+// Sets up relationship between tables and allows me to join them using Sequelize
+User.hasMany(BlogPost, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
 });
 
-const db = {};
-
-fs.readdirSync(__dirname)
-  .filter(file => {
-    return (
-      file.indexOf('.') !== 0 &&
-      file !== basename &&
-      file.slice(-3) === '.js' &&
-      file !== 'index.js' // Exclude the index.js file from model loading
-    );
-  })
-  .forEach(file => {
-    const model = require(path.join(__dirname, file))(sequelize, Sequelize.DataTypes);
-    db[model.name] = model;
-  });
-
-Object.keys(db).forEach(modelName => {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
-  }
+BlogPost.belongsTo(User, {
+  foreignKey: "user_id",
 });
 
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
+User.hasMany(Comment, {
+  foreignKey: "user_id",
+  onDelete: "CASCADE",
+});
 
-module.exports = db;
+Comment.belongsTo(User, {
+  foreignKey: "user_id",
+});
+
+Comment.belongsTo(BlogPost, {
+  foreignKey: "blogPost_id",
+  onDelete: "CASCADE",
+});
+
+BlogPost.hasMany(Comment, {
+  foreignKey: "blogPost_id",
+  onDelete: "CASCADE",
+});
+
+// Export
+module.exports = { User, BlogPost, Comment };
