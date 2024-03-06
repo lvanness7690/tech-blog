@@ -1,89 +1,94 @@
 /* General page styles */
+body {
+  background-color: #007BFF;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
 
-header {
-    font-family: "Roboto", sans-serif;
-  }
-  
-  body {
-    background-color: #f5f5f5;
-  }
-  
-  h1 {
-    font-family: "Roboto", sans-serif;
-    background-color: #4caf50;
-    color: #fff;
-    padding: 16px;
-    margin-bottom: 5px;
-  }
-  
-  #blogName {
-    color: #607d8b;
-  }
-  
-  main {
-    font-family: "Roboto", sans-serif;
-    margin-top: -5px;
-    background-color: #f5f5f5;
-  }
-  
-  .homepage-main {
-    margin-top: 34px;
-  }
-  
-  .user-name {
-    background-color: #03a9f4;
-  }
-  
-  .blogPost-main {
-    margin-top: 34px;
-  }
-  
-  /* Nav styles */
-  
-  .navBar {
-    background-color: #2196f3;
-  }
-  
-  #logout {
-    background-color: #03a9f4;
-  }
-  
-  /* Input/textarea styles */
-  
-  #titleInput,
-  #bodyInput,
-  #comment,
-  #email-login,
-  #password-login,
-  #name-signup,
-  #email-signup,
-  #password-signup {
-    background-color: #fff;
-  }
-  
-  /* Button styles */
-  
-  .btn {
-    background-color: #ff5722;
-  }
-  
-  /* Card styles */
-  
-  .card-header {
-    background-color: #e0e0e0;
-  }
-  
-  .card-body {
-    background-color: #fafafa;
-  }
-  
-  .card {
-    background-color: #fafafa;
-  }
-  
-  .card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-  }
-  
+/* Nav styles */
+.navBar {
+  background-color: #000000;
+  display: flex;
+  justify-content: start;
+  padding: 10px 20px;
+}
+
+.nav-link, #logout {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.nav-link:hover, #logout:hover {
+  color: #dddddd;
+  text-decoration: underline;
+}
+
+#logout {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Title section styles */
+.title-section {
+  background-color: black; /* Black background for the section */
+  padding: 20px;
+}
+
+/* Title container styles */
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.title-content {
+  background-color: #007BFF; /* Blue background for the title */
+  border-radius: 25px; /* Rounded corners for the title */
+  padding: 10px 20px; /* Padding around the title text */
+}
+
+#blogName {
+  font-family: "Gravitas One", cursive;
+  color: #ffffff; /* White text color */
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+  background-color: #007BFF;
+}
+
+/* Blog post styles */
+.blogPost-main {
+  background-color: #ffffff; /* White background for blog posts */
+  color: #000000; /* Dark text for readability */
+  border: 2px solid #6c757d; /* Dark border as per the mockup */
+  border-radius: 10px; /* Rounded corners for the blog post */
+  margin-bottom: 20px; /* Spacing between posts */
+  padding: 20px; /* Padding inside the posts */
+  margin-top: -5px; /* Adjust spacing to fit with the title */
+}
+
+/* Homepage card styles */
+.homepage-main .card-header {
+  background-color: #000000; /* Black background for card header */
+  color: #ffffff; /* White text color for card header */
+  padding: 10px 20px; /* Padding for card header */
+}
+
+.homepage-main .card-header h3 a {
+  color: #ffffff; /* White color for links in card header */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.homepage-main .card-body {
+  padding: 20px; /* Padding for card body */
+}
+
+.homepage-main .card-body p {
+  color: #000000; /* Black text color for card body */
+}
