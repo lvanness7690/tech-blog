@@ -10,6 +10,7 @@
 * [Features](#features)
 * [Credits](#credits)
 * [License](#license)
+
 ## Description
 
 The Tech Blog is a Content Management System (CMS)-style blog site designed for tech enthusiasts to create, view, and interact with blog posts. Built using Node.js, Express.js, Sequelize, and Handlebars.js, this application provides a user-friendly interface for managing blog posts, user authentication, and commenting functionality.
