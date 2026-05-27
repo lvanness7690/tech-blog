@@ -43,7 +43,7 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
 
 ## Live Application
 
-[The Tech Blog](https://stormy-bastion-41204-8176816fd2c1.herokuapp.com)
+The original Heroku deployment has been retired. This MySQL-backed MVC application can be run locally by following the installation steps above.
 
 ## Usage
 
@@ -70,5 +70,4 @@ Developed by Leighton Van Ness
 ## License
 
 Please refer to the license in the repo.
-
 
